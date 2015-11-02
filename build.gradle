@@ -15,6 +15,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'curseforge'
 
 
+
 group = 'tterrag.wailaplugins'
 archivesBaseName = "WAILAPlugins"
 version = "MC${minecraft_version}-${mod_version}-${System.getenv().BUILD_NUMBER}"
@@ -56,6 +57,7 @@ dependencies {
 	compile "mcp.mobius.waila:Waila:${WAILA_version}"
     compile "net.sengir.forestry:forestry_1.7.10:${forestry_version}:dev"
     compile "info.tehnut.resourcefulcrops:ResourcefulCrops:${rcrops_version}:deobf"
+	compile "net.industrial-craft:industrialcraft-2:${ic2_version}:api"
 }
 
 processResources {
